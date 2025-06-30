@@ -15,3 +15,5 @@ urlpatterns = [
     path("authors/", author_list, name="author-list"),
     path("authors/<int:pk>", movie_detail, name="author-detail"),
 ]
+
+app_name = "author"
