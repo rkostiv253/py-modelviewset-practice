@@ -3,7 +3,8 @@ from rest_framework import serializers
 from author.models import Author
 
 
-class AuthorSerializer(serializers.ModelSerializer):
+class AuthorSerializer(serializers.Serializer):
+
     id = serializers.IntegerField(read_only=True)
     first_name = serializers.CharField(max_length=255)
     last_name = serializers.CharField(max_length=255)
